@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+  adminer:
+    container_name: adminer
+    image: adminer
+    restart: always
+    depends_on:
+      - database
+    ports:
+      - "8080:8080"
